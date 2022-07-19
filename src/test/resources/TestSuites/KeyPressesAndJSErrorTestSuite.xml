@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="KeyPressesAndJSErrorTestSuite" verbose="1">
+
+	<test name="KeyPressesTests">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.herokuapp.theinternet.KeyPressesTests" />
+		</classes>
+	</test>
+	
+	<!-- <test name="JSErrorTests">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.herokuapp.theinternet.JSErrorTests" />
+		</classes>
+	</test> -->
+
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveLoginTest(failed)">
+    <parameter name="expectedUrl" value="https://the-internet.herokuapp.com/secure"/>
+    <parameter name="expectedSuccessMsg" value="You logged into a secure area!"/>
+    <parameter name="passwordPos" value="SuperSecretPassword!"/>
+    <parameter name="usernamePos" value="tomsmith"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTests">
+        <methods>
+          <include name="positiveLoginTest" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTests -->
+    </classes>
+  </test> <!-- PositiveLoginTest(failed) -->
+  <test thread-count="5" name="InvalidUsernameTest(failed)">
+    <parameter name="usernameNeg" value="ronnaumbal"/>
+    <parameter name="expectedErrorMsg" value="Your username is invalid!"/>
+    <parameter name="passwordNeg" value="SuperSecretPassword!"/>
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="negativeLoginTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTests -->
+    </classes>
+  </test> <!-- InvalidUsernameTest(failed) -->
+  <test thread-count="5" name="InvalidPasswordTest(failed)">
+    <parameter name="usernameNeg" value="tomsmith"/>
+    <parameter name="expectedErrorMsg" value="Your password is invalid!"/>
+    <parameter name="passwordNeg" value="Incorrect@1234!"/>
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="negativeLoginTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTests -->
+    </classes>
+  </test> <!-- InvalidPasswordTest(failed) -->
+</suite> <!-- Failed suite [LoginSuite] -->

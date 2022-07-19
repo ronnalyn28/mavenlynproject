@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="WindowsAndEditorAndUploadTestSuite" verbose="1">
+
+	<!-- <test name="WindowsTests">
+		<parameter name="Browser" value="Firefox" />
+		<classes>
+			<class name="com.herokuapp.theinternet.WindowsTests" />
+		</classes>
+	</test> -->
+
+	<!-- <test name="EditorTests">
+		<parameter name="Browser" value="Firefox" />
+		<classes>
+			<class name="com.herokuapp.theinternet.EditorTests" />
+		</classes>
+	</test> -->
+
+	<test name="FileUploadTests">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.herokuapp.theinternet.FileUploadTests">
+			<methods>
+				<include name="uploadWithDataProviderTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

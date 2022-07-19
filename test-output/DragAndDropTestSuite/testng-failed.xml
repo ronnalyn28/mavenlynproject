@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DragAndDropTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DragAndDropTests-CH(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.DragAndDropTests">
+        <methods>
+          <include name="dragAToBTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.DragAndDropTests -->
+    </classes>
+  </test> <!-- DragAndDropTests-CH(failed) -->
+  <test thread-count="5" name="DragAndDropTests-FF(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.DragAndDropTests">
+        <methods>
+          <include name="dragAToBTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.DragAndDropTests -->
+    </classes>
+  </test> <!-- DragAndDropTests-FF(failed) -->
+</suite> <!-- Failed suite [DragAndDropTestSuite] -->

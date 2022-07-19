@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DropdownTestSuiteHeadless.xml]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DropdownTests-PH(failed)">
+    <parameter name="Browser" value="PhantomJS"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.DropdownTests">
+        <methods>
+          <include name="selectOptionTwoTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.DropdownTests -->
+    </classes>
+  </test> <!-- DropdownTests-PH(failed) -->
+</suite> <!-- Failed suite [DropdownTestSuiteHeadless.xml] -->
