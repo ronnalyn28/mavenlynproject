@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SqlandCalendarTestSuite" verbose="1">
+
+	<test name="MySqlTests">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.herokuapp.theinternet.MySqlTests" />
+		</classes>
+	</test>
+	
+	<test name="CalendarTests">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.herokuapp.theinternet.CalendarTests" />
+		</classes>
+	</test>
+
+</suite>

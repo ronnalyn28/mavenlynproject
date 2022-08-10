@@ -1,0 +1,7 @@
+testNum,usernameNeg,passwordNeg,expectedErrorMessage,testdescription
+1,ronnaumbal,SuperSecretPassword!,Your username is invalid!,Invalid Username Test
+2,tomsmith,Incorrect@1234!,Your password is invalid!,Invalid Password Test
+3,ronnaumbal,Incorrect@1234!,Your username is invalid!,Invalid Username and Password Test
+4,,SuperSecretPassword!,Your username is invalid!,Blank Username Test
+5,tomsmith,,Your password is invalid!,Blank Password Test
+6,,,Your username is invalid!,Blank Username and Password Test
